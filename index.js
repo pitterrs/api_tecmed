@@ -13,4 +13,4 @@ app.use(cors());
 
 app.use("/", appRoutes);
 
-app.listen(443);
+app.listen(80);
