@@ -9,8 +9,8 @@ import mysql from "mysql";
 
 export const connection = mysql.createPool({
     connectionLimit : 100,
-    // host: "ns104.hostgator.com.br",
-    host: "br104.hostgator.com.br",
+    // host: "br104.hostgator.com.br",
+    host: "192.185.210.220",
     user: "pitter45_robson",
     password: "Pitter1992",
     port: 3306,
