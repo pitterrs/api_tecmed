@@ -12,7 +12,7 @@ export const connection = mysql.createPool({
     // host: "br104.hostgator.com.br",
     host: "192.185.210.220",
     user: "pitter45_robson",
-    password: "Pitter1992",
+    password: "oAm2FUQGHdG8W",
     port: 3306,
     database: "pitter45_tecmed",
     multipleStatements: true
