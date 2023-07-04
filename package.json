@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon TZ=America/Sao_Paulo index.js"
   },
   "keywords": [],
   "author": "",
