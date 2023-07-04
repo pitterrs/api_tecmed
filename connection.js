@@ -16,7 +16,7 @@ export const connection = mysql.createPool({
     port: 3306,
     database: "pitter45_tecmed",
     multipleStatements: true,
-    timezone: 'utc'
+    timezone: 'BRT'
 })
 
 // export const connection = mysql.createPool({
