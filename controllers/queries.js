@@ -196,8 +196,8 @@ export const addOrdem = (req, res) => {
         req.body.valorTotal4,
         req.body.totalHoras,
         req.body.fechamento,
-        req.body.situacao,
         req.body.tecnico,
+        req.body.situacao,
         req.body.recebido,
         req.body.matricula,
     ];
