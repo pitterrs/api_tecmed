@@ -21,7 +21,7 @@ export const getEquips = (req, res) => {
 
 export const getallequipaments = (req, res) => {
     
-    const q = `SELECT nome FROM equipamentos ORDER BY nome `;
+    const q = `SELECT * FROM equipamentos ORDER BY nome `;
 
     connection.query(q, (err, data) => {
         if (err) return res.json(err);
