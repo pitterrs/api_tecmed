@@ -21,7 +21,7 @@ export const getEquips = (req, res) => {
 
 export const addEquip = (req, res) => {
     const q =
-        "INSERT INTO equipamentos(`nome`, `setor`, `marca`, `modelo`, `patrimonio`, `serie`) VALUES(?)";
+        "INSERT INTO equipamentos(`nome`, `setor`, `marca`, `modelo`, `patrimonio`, `serie`, `observacoes`) VALUES(?)";
     
     const values = [
         req.body.nome,
@@ -30,6 +30,7 @@ export const addEquip = (req, res) => {
         req.body.modelo,
         req.body.patrimonio,
         req.body.serie,
+        req.body.observacoes,
     ];
 
     connection.query(q, [values], (err) => {
@@ -41,7 +42,7 @@ export const addEquip = (req, res) => {
 
 export const updateEquip = (req, res) => {
     const q =
-        "UPDATE equipamentos SET `nome` = ?, `setor` = ?, `marca` = ?, `modelo` = ?, `patrimonio` = ?, `serie` = ? WHERE `id` = ?";
+        "UPDATE equipamentos SET `nome` = ?, `setor` = ?, `marca` = ?, `modelo` = ?, `patrimonio` = ?, `serie` = ?, `observacoes` = ? WHERE `id` = ?";
     
     const values = [
         req.body.nome,
@@ -50,6 +51,7 @@ export const updateEquip = (req, res) => {
         req.body.modelo,
         req.body.patrimonio,
         req.body.serie,
+        req.body.observacoes,
     ];
 
     connection.query(q, [...values, req.params.id], (err) => {
