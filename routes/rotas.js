@@ -11,7 +11,8 @@ import {
   deleteEquip,
   getOrdens,
   getTotalOS,
-  deleteOrdem
+  deleteOrdem,
+  getallequipaments
 } from "../controllers/queries.js";
 
 const router = express.Router();
@@ -27,6 +28,8 @@ router.get("/equipamento", getTotalEquips);
 router.get("/ordens/:limit/:offset", getOrdens);
 
 router.get("/ordens", getTotalOS);
+
+router.get("/listaequipamentos", getallequipaments);
 
 router.post("/criarOrdem", addOrdem);
 

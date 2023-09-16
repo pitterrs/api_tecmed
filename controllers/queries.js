@@ -19,6 +19,18 @@ export const getEquips = (req, res) => {
     });
 };
 
+export const getallequipaments = (req, res) => {
+    
+    const q = `SELECT nome FROM equipamentos ORDER BY nome `;
+
+    connection.query(q, (err, data) => {
+        if (err) return res.json(err);
+
+        return res.status(200).json(data);
+    });
+    
+}
+
 export const addEquip = (req, res) => {
     const q =
         "INSERT INTO equipamentos(`nome`, `setor`, `marca`, `modelo`, `patrimonio`, `serie`, `observacoes`) VALUES(?)";
